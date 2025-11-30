@@ -121,3 +121,168 @@
       <p class="meta">Focus areas: Research & insights · Customer feedback · Process improvement · A/B testing · Launch & communication</p>
     </section>
 
+    <section id="case-ai" class="case-study" aria-labelledby="ai-title">
+      <span class="section-label">CASE STUDY 1 – AI Product</span>
+      <h2 id="ai-title">Improving Language Accuracy for Duolingo‑Style App</h2>
+
+      <h3>Problem Statement</h3>
+      <p>
+        Customers were upset because the AI tutor kept making spelling errors. It damaged user trust. Complaints rose. Retention dipped. The team needed a way to tighten accuracy and restore confidence.
+      </p>
+
+      <h3>Research and Insights</h3>
+      <p>
+        I have obtained insight by running interviews with active learners. Many said the errors made them doubt the lessons. I checked analytics and saw a spike in “incorrect suggestion” reports. I reviewed the LLM outputs and spotted two root causes:
+      </p>
+      <ul>
+        <li>Training data had inconsistent regional spelling.</li>
+        <li>The model lacked confidence scoring for words that needed higher certainty.</li>
+      </ul>
+
+      <h3>Customer Feedback and Pain Points</h3>
+      <ul class="quote-list" aria-label="User feedback quotes">
+        <li>“I don’t know who to trust.”</li>
+        <li>“I feel like I am learning the wrong thing.”</li>
+        <li>“I want corrections to be consistent.”</li>
+      </ul>
+      <p>This shaped the direction of the fix.</p>
+
+      <h3>Solution Design and Process Improvements</h3>
+      <p>I designed a three-step solution:</p>
+      <ol>
+        <li><strong>AI Spell‑Check Layer:</strong> I added a rule-based spell-check layer before responses reached users.</li>
+        <li><strong>Confidence Score Thresholds:</strong> I have obtained model confidence data and set a threshold where the AI would avoid “guessing”.</li>
+        <li><strong>Correction Feedback Loop:</strong> I added a one-tap “This looks wrong” button that fed samples back to the training pipeline for review.</li>
+      </ol>
+
+      <h3>Testing Methodology (Including A/B Testing)</h3>
+      <p>
+        I tested with 200 real learners split in two groups.
+      </p>
+      <ul>
+        <li><strong>Control group</strong> received the old model.</li>
+        <li><strong>Test group</strong> used the improved model.</li>
+      </ul>
+      <p>I tracked accuracy, reported errors and lesson completion. Results showed a clear lift in accuracy and trust.</p>
+
+      <h3>Iterations Based on Feedback</h3>
+      <p>
+        Learners wanted slower suggestions when the AI was unsure. I adjusted the threshold and added an “Are you sure?” check when confidence dropped.
+      </p>
+
+      <h3>Launch Strategy and Communication Plan</h3>
+      <div class="callout">
+        <ul>
+          <li><strong>Soft launch</strong> for heavy learners.</li>
+          <li><strong>Full launch</strong> with a short in-app message explaining how accuracy had been improved.</li>
+        </ul>
+        <p>This restored trust and cut spelling‑related complaints.</p>
+      </div>
+    </section>
+
+    <section id="case-mobile" class="case-study" aria-labelledby="mobile-title">
+      <span class="section-label">CASE STUDY 2 – Mobile App</span>
+      <h2 id="mobile-title">Illicit Code Scanner (Android → iOS Expansion)</h2>
+
+      <h3>Problem Statement</h3>
+      <p>
+        The app scanned installations for illicit code but worked only on Android. iOS users kept requesting support. This limited adoption and slowed growth.
+      </p>
+
+      <h3>Research on Cross‑Platform Security Challenges</h3>
+      <p>
+        I reviewed platform restrictions. iOS blocks deep system access. Android allows broader scanning. The main challenge was designing a safe, compliant method that still protected users.
+      </p>
+
+      <h3>Customer Feedback and Pain Points</h3>
+      <ul class="quote-list" aria-label="User feedback quotes">
+        <li>“I can’t recommend this to friends because they’re on iPhone.”</li>
+        <li>“I want equal protection across both devices.”</li>
+      </ul>
+      <p>This showed the clear demand for parity.</p>
+
+      <h3>Solution Design and iOS Process Improvements</h3>
+      <ul>
+        <li>Secure file‑based scanning instead of system‑wide scanning.</li>
+        <li>On‑device ML models to detect risky behaviour patterns.</li>
+        <li>Apple‑approved APIs to analyse installation metadata.</li>
+      </ul>
+      <p>This matched iOS rules while still giving users protection.</p>
+
+      <h3>Testing and A/B Experiments</h3>
+      <ul>
+        <li><strong>Group A:</strong> Android users using current product</li>
+        <li><strong>Group B:</strong> Early iOS testers</li>
+      </ul>
+      <p>
+        I checked activation, scanning frequency and trust ratings. iOS adoption grew faster than expected.
+      </p>
+
+      <h3>Launch Strategy</h3>
+      <div class="callout">
+        <ul>
+          <li><strong>Closed beta</strong> with 500 iOS testers.</li>
+          <li><strong>Public launch</strong> timed with App Store promotion.</li>
+          <li><strong>Message</strong> across both platforms explaining “Now on iOS”.</li>
+        </ul>
+        <p>It raised the app’s reach and repositioned the product as cross‑platform and safer.</p>
+      </div>
+    </section>
+
+    <section id="case-web" class="case-study" aria-labelledby="web-title">
+      <span class="section-label">CASE STUDY 3 – Website Feature</span>
+      <h2 id="web-title">Brand Protection Tool (Scam Site + Sentiment Monitoring)</h2>
+
+      <h3>Problem Statement</h3>
+      <p>
+        The tool scanned websites for scam copies and tracked social mentions. Bots were getting blocked by social platforms. Sentiment scoring was inconsistent because the AI struggled with sarcasm and short posts.
+      </p>
+
+      <h3>Analysis of Technical and Compliance Challenges</h3>
+      <p>I reviewed the blocks and found two main issues:</p>
+      <ul>
+        <li>Social platforms tightened bot rules.</li>
+        <li>Scraping raised compliance risks.</li>
+      </ul>
+      <p>I designed a safer approach that used approved APIs and zero scraping.</p>
+
+      <h3>Customer Feedback and Pain Points</h3>
+      <ul class="quote-list" aria-label="Stakeholder feedback quotes">
+        <li>Fake pages stealing customers.</li>
+        <li>Negative posts spreading fast.</li>
+        <li>No early warning system.</li>
+      </ul>
+      <p>They wanted faster alerts and clearer sentiment.</p>
+
+      <h3>AI Integration and Workarounds</h3>
+      <ul>
+        <li>An API‑based fetch system that used official social platform endpoints.</li>
+        <li>A sentiment model trained on short‑form posts.</li>
+        <li>A “context booster” that expanded short messages to reduce misclassification.</li>
+      </ul>
+
+      <h3>Testing and A/B Validation</h3>
+      <ul>
+        <li><strong>Control tool</strong> with existing detection</li>
+        <li><strong>New tool</strong> with upgraded AI</li>
+      </ul>
+      <p>I tracked alert accuracy and false positives. The AI version showed clear improvement in detection and sentiment reliability.</p>
+
+      <h3>Launch Strategy</h3>
+      <div class="callout">
+        <ul>
+          <li>First to high‑risk brands</li>
+          <li>Then wider rollout with a dashboard tutorial</li>
+          <li>Clear message: “Smarter alerts. Better protection.”</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Kofoworola Harris — Product Management Portfolio</p>
+      <p class="meta">This portfolio highlights research, customer feedback loops, process improvements, A/B testing, and staged launches across AI, mobile, and web products.</p>
+    </div>
+  </footer>
+</body>
